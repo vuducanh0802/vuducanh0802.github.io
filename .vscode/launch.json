@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Open homepage (Chrome)",
+      "file": "${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Open homepage (Edge)",
+      "file": "${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

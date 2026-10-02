@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101f2d" />
+    <meta
+      name="description"
+      content="Explore places around the world connected to Duc Anh Vu&#x27;s journey."
+    />
+    <title>Places — Duc Anh Vu</title>
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script defer src="./assets/vendor/d3.min.js"></script>
+    <script defer src="./data/world.js"></script>
+    <script defer src="./assets/js/content.js"></script>
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+  <body id="top" class="page-places">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="./index.html" aria-label="Duc Anh Vu, home"
+        ><span class="wordmark-symbol">DA<span>.</span></span
+        ><span class="wordmark-name">DUC ANH VU</span></a
+      >
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="./about.html">About</a><a href="./journey.html">Journey</a
+        ><a href="./publications.html">Publications</a><a href="./service.html">Service</a
+        ><a href="./places.html" aria-current="page">Places</a>
+      </nav>
+      <a class="nav-contact" href="mailto:vuducanh1708@gmail.com"
+        >Get in touch <span aria-hidden="true">↗</span></a
+      >
+    </header>
+
+    <main id="main">
+      <section
+        class="places section-pad"
+        id="places"
+        aria-labelledby="places-title"
+      >
+        <div class="section-shell">
+          <div class="section-heading section-heading-light">
+            <span class="section-number">05 / AROUND THE WORLD</span>
+            <h2 id="places-title">
+              Places that shaped<br /><em>the story.</em>
+            </h2>
+            <p>
+              Drag the globe or select a place to see the notes I’ve collected
+              there.
+            </p>
+          </div>
+          <div class="map-layout">
+            <div class="globe-panel">
+              <div class="globe-grid" aria-hidden="true"></div>
+              <div class="globe-frame">
+                <svg
+                  id="globe"
+                  role="group"
+                  aria-label="Interactive globe showing places connected to Duc Anh's journey"
+                  tabindex="0"
+                ></svg>
+                <div class="map-popup" id="map-popup" hidden></div>
+              </div>
+              <div class="globe-hint">
+                DRAG TO EXPLORE <span aria-hidden="true">↔</span>
+              </div>
+              <div class="globe-controls">
+                <button
+                  type="button"
+                  id="rotate-left"
+                  aria-label="Rotate globe left"
+                >
+                  ←
+                </button>
+                <button
+                  type="button"
+                  id="rotate-right"
+                  aria-label="Rotate globe right"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <div class="place-side">
+              <div
+                class="place-list"
+                id="place-list"
+                aria-label="Select a place"
+              ></div>
+              <article
+                class="place-card"
+                id="place-card"
+                aria-live="polite"
+              ></article>
+              <p class="map-footnote">
+                Place photos are illustrative; personal trip photos can be added
+                later.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <div>
+          <span class="footer-star" aria-hidden="true">✳</span>
+          <h2>Let’s make<br /><em>something matter.</em></h2>
+          <a href="mailto:vuducanh1708@gmail.com" class="footer-email"
+            >vuducanh1708@gmail.com ↗</a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="copyright-year">2026</span> Duc Anh Vu</span>
+          <span>Based in Singapore · Curious everywhere</span>
+          <a href="./index.html">Home ↗</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
